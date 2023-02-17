@@ -40,16 +40,37 @@ h3 {font-size: 1.953rem;}
 
 h4 {font-size: 1.563rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 
 small, .text_small {font-size: 0.8rem;}
 
 .flex-container {
 display: flex;
-justify-content: flex-end;
+align-items: center;
+justify-content: center;
+padding: 10%, 0%, 10%, 0%;
+margin-left: 15rem;
+margin-right: 15rem;
 }
 
 .flex-margin-2col {
   display: flex; /*Defines a flex container*/
   justify-content: center; /*Defines alignment of items within the container, along the main access*/ 
+  align-items: center;
+  padding: 8rem rem 8rem 0rem; /*Turn px values from Figma into approximate % values*/
+  margin: 8rem rem 8rem 0rem;
+}
+.flex-margin-2col {
+  flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom.*/
+}
+
+.block {
+display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 2rem 2rem 2rem 2rem;
 }
